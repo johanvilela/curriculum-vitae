@@ -1,7 +1,20 @@
+import { ThemeProvider } from "@/context/ThemeProvider/theme-provider";
+import { ModeToggle } from "@/components/ModeToggle";
+
 export function App() {
+  const pageSize = "max-w-4xl";
   return (
-    <>
-      <h1>Test</h1>
-    </>
+    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+      <div className="flex h-max justify-center">
+        <div className={`${pageSize} flex flex-1 flex-col border`}>
+          <div className="mt-3 flex justify-between">
+            <div>Avatar</div>
+            <div className="hide-on-print">
+              <ModeToggle />
+            </div>
+          </div>
+        </div>
+      </div>
+    </ThemeProvider>
   );
 }
