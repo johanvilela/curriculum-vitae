@@ -1,6 +1,6 @@
 import { ThemeProvider } from "@/context/ThemeProvider/theme-provider";
-import { ModeToggle } from "@/components/ModeToggle";
-import { Avatar } from "./components/Avatar";
+import { PageHeader } from "@/components/PageHeader";
+import { PageContent } from "@/components/PageContent";
 
 export function App() {
   const pageSize = "max-w-4xl";
@@ -8,14 +8,10 @@ export function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="flex h-max justify-center">
         <div className={`${pageSize} flex flex-1 flex-col`}>
-          <div className="mt-3 flex justify-between">
-            <div>
-              <Avatar />
-            </div>
-            <div className="hide-on-print">
-              <ModeToggle />
-            </div>
-          </div>
+          {/* PageHeader */}
+          <PageHeader />
+          {/* PageContent */}
+          <PageContent />
         </div>
       </div>
     </ThemeProvider>
