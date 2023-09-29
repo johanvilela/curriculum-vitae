@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/PageHeader";
 import { PageContent } from "@/components/PageContent";
 
 export function App() {
-  const pageSize = "max-w-4xl";
+  const pageSize = "max-w-[44rem]";
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="flex h-max justify-center">
