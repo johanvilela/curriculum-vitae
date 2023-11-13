@@ -2,7 +2,7 @@ export function ContactInfo() {
   return (
     <div className="my-6 w-full overflow-y-auto">
       <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2">
-        <div className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+        <div className="px-4 py-2 text-left text-teal-500 transition-colors dark:text-teal-400 print:text-black print:dark:text-black [&[align=center]]:text-center [&[align=right]]:text-right">
           <a
             href="https://wa.me/5566992197205"
             target="_blank"
@@ -11,7 +11,7 @@ export function ContactInfo() {
             +55 (66) 99219-7205
           </a>
         </div>
-        <div className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+        <div className="px-4 py-2 text-left text-teal-500 transition-colors dark:text-teal-400 print:text-black print:dark:text-black [&[align=center]]:text-center [&[align=right]]:text-right">
           <a
             href="mailto:johanvilela@hotmail.com"
             target="_blank"
@@ -20,7 +20,7 @@ export function ContactInfo() {
             johanvilela@hotmail.com
           </a>
         </div>
-        <div className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+        <div className="px-4 py-2 text-left text-teal-500 transition-colors dark:text-teal-400 print:text-black print:dark:text-black [&[align=center]]:text-center [&[align=right]]:text-right">
           <a
             href="https://www.linkedin.com/in/johanvilela"
             target="_blank"
@@ -29,7 +29,7 @@ export function ContactInfo() {
             www.linkedin.com/in/johanvilela
           </a>
         </div>
-        <div className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
+        <div className="px-4 py-2 text-left text-teal-500 transition-colors dark:text-teal-400 print:text-black print:dark:text-black [&[align=center]]:text-center [&[align=right]]:text-right">
           <a
             href="https://www.github.com/johanvilela"
             target="_blank"
