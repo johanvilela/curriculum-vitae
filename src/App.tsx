@@ -7,7 +7,7 @@ export function App() {
   const pageSize = "max-w-[44rem]";
 
   return (
-    <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
+    <ThemeProvider defaultTheme="system" storageKey="vite-ui-theme">
       <div className="flex h-max justify-center">
         <div className={`${pageSize} flex w-full flex-1 flex-col px-4 sm:px-0`}>
           <PageHeader />
@@ -18,3 +18,7 @@ export function App() {
     </ThemeProvider>
   );
 }
+
+// Se eu tivet no celular colocar uma margem lateral
+// Desativar a margem lateral quando for imprimir
+// Testar imprimir pelo celular

@@ -1,6 +1,7 @@
 import { ModeToggle } from "@/components/ModeToggle";
 import { Avatar } from "@/components/Avatar";
 import { TypographyH1 } from "../Typography/TypographyH1";
+import { PrintPage } from "@/components/PrintPage";
 
 export function PageHeader() {
   return (
@@ -15,6 +16,8 @@ export function PageHeader() {
       </div>
       <div className="hide-on-print">
         <ModeToggle />
+        <PrintPage />
+        {/* <button onClick={handlePrint}>imprimir</button> */}
       </div>
     </div>
   );

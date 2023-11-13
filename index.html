@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      @media print {
+        @page {
+          margin-top: 31px;
+          margin-bottom: 31px;
+        }
+      }
+    </style>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/file-text.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,4 +18,23 @@
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
+  <script>
+    // This code is used to handle theme when click on button `print`
+    window.onbeforeprint = () => {
+      let currentTheme = localStorage.getItem("vite-ui-theme");
+      if (currentTheme !== "light") {
+        localStorage.setItem("currentTheme", currentTheme);
+        localStorage.setItem("vite-ui-theme", "light");
+        window.location.reload();
+      }
+    };
+    window.onafterprint = () => {
+      let currentTheme = localStorage.getItem("currentTheme");
+      if (currentTheme) {
+        localStorage.setItem("vite-ui-theme", currentTheme);
+        localStorage.removeItem("currentTheme");
+        window.location.reload();
+      }
+    };
+  </script>
 </html>
