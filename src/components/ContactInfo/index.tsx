@@ -5,18 +5,24 @@ export function ContactInfo() {
         <tbody>
           <tr className="m-0 p-0">
             <td className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-              +55 (66) 99219-7205
+              <a href="https://wa.me/5566992197205">+55 (66) 99219-7205</a>
             </td>
             <td className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-              johanvilela@hotmail.com
+              <a href="mailto:johanvilela@hotmail.com">
+                johanvilela@hotmail.com
+              </a>
             </td>
           </tr>
           <tr className="m-0 p-0">
             <td className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-              www.linkedin.com/in/johanvilela
+              <a href="https://www.linkedin.com/in/johanvilela">
+                www.linkedin.com/in/johanvilela
+              </a>
             </td>
             <td className="px-4 py-2 text-left [&[align=center]]:text-center [&[align=right]]:text-right">
-              www.github.com/johanvilela
+              <a href="https://www.github.com/johanvilela">
+                www.github.com/johanvilela
+              </a>
             </td>
           </tr>
         </tbody>
