@@ -29,24 +29,24 @@ export function PageContent() {
       </TypographyP>
       <TypographyP>O sistema foi construído do zero usando:</TypographyP>
       <TypographyUl>
-        <li>Figma para prototipagem;</li>
-        <li>
+        <li className="transition-colors	">Figma para prototipagem;</li>
+        <li className="transition-colors	">
           Para a interface web usei React, Typescript, Vite, Tailwind
           (responsivo para mobile);
         </li>
-        <li>
+        <li className="transition-colors	">
           Bibliotecas como ApexCharts, Zod, React Query, React-hook-form e
           Axios;
         </li>
-        <li>
+        <li className="transition-colors	">
           Versionamento de código usando Git e GitHub com Git Conventional
           Commits e GitHub Actions para CI/CD;
         </li>
-        <li>
+        <li className="transition-colors	">
           Para o backend da aplicação criei uma API RESTful com Node.js,
           Fastify, JWT (JSON Web Token);
         </li>
-        <li>
+        <li className="transition-colors	">
           Prisma ORM para gerenciar o banco de dados PostgreSQL e containers
           Docker.
         </li>
@@ -74,9 +74,9 @@ export function PageContent() {
       </TypographyP>
       <TypographyH2>Idiomas</TypographyH2>
       <TypographyUl>
-        <li>Inglês fluente;</li>
-        <li>Português fluente;</li>
-        <li>Espanhol básico.</li>
+        <li className="transition-colors	">Inglês fluente;</li>
+        <li className="transition-colors	">Português fluente;</li>
+        <li className="transition-colors	">Espanhol básico.</li>
       </TypographyUl>
     </div>
   );

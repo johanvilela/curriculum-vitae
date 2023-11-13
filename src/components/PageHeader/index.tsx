@@ -4,12 +4,12 @@ import { TypographyH1 } from "../Typography/TypographyH1";
 
 export function PageHeader() {
   return (
-    <div className="mt-3 flex justify-between">
+    <div className="mt-6 flex justify-between print:mt-0">
       <div className="flex">
-        <div>
+        <div className="print:hidden">
           <Avatar />
         </div>
-        <div className="ml-2 self-center">
+        <div className="ml-2 self-center print:ml-0">
           <TypographyH1>Johan Vilela</TypographyH1>
         </div>
       </div>

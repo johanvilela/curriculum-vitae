@@ -10,9 +10,7 @@ export function App() {
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
       <div className="flex h-max justify-center">
         <div className={`${pageSize} flex flex-1 flex-col`}>
-          {/* PageHeader */}
           <PageHeader />
-          {/* PageContent */}
           <PageContent />
           <PageFooter />
         </div>
